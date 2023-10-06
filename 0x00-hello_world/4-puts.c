@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*Main - This Prints to the console
+*main - This Prints to the console
 *
 *Description: This code prints what C language is like
 *
