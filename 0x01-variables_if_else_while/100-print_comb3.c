@@ -34,6 +34,6 @@ int main(void)
 		num1++;
 	}
 
-	return 0;
+	return (0);
 }
 
