@@ -15,7 +15,7 @@ int main(void)
 		if (!firstDigit)
 		{
 		putchar(',');
-		putchar('	');
+		putchar(' ');
 		}
 
 		else
