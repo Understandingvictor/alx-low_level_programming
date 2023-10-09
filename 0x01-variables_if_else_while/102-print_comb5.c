@@ -1,41 +1,36 @@
 /**
-*main - prints all possible combinations of two two-digit numbers
-*Return: 0 upon completion
+*main - entry point
+*Return: 0 on completion
 */
 
 #include <stdio.h>
 
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int num1, num2;
 
-	while (i <= 99)
+	num1 = 0;
+	while (num1 <= 98)
 	{
-		j = i + 1;
-
-		while (j <= 99)
+		num2 = num1 + 1;
+		while (num2 <= 99)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar('\t');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (!(i == 98 && j == 99))
+			if (num1 != 98 || num2 != 99)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-
-			j++;
+			num2++;
 		}
-
-		i++;
+		num1++;
 	}
-
 	putchar('\n');
 
 	return (0);
 }
-
