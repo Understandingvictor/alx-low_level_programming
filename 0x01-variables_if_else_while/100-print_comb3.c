@@ -18,10 +18,14 @@ int main(void)
 			putchar(num1 + '0');
 			putchar(num2 + '0');
 
-			if (num1 < 8 || num2 < 9)
+			if (num1 == 8 && num2 == 9)
+			{
+				putchar('\n');
+			}
+			else
 			{
 				putchar(',');
-				putchar('\t');
+				putchar(' ');
 			}
 
 			num2++;
@@ -30,7 +34,6 @@ int main(void)
 		num1++;
 	}
 
-	putchar('\n');
-	return (0);
+	return 0;
 }
 
