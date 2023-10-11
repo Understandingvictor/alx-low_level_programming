@@ -1,5 +1,5 @@
-/*
-*main - prints alphabets in lowercase followed by a new line
+/**
+*print_alphabet - Prints the lowercase alphabet followed by a newline
 *Return: 0 upon success
 */
 
