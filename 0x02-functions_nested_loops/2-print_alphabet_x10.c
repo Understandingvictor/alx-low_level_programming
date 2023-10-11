@@ -1,5 +1,5 @@
 /**
-*print_alphabet_10 - prints the alphabet 10x
+*print_alphabet_x10 - prints the alphabet x10
 *Return: 0 upon success
 */
 #include "main.h"
@@ -17,7 +17,10 @@ void print_alphabet_x10(void)
 			start++;
 		}
 
+		if (1 < 9)
+
 		_putchar('\n');
 		i++;
+		start = 'a';
 	}
 }
