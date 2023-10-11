@@ -7,18 +7,19 @@
 
 void print_alphabet(void)
 {
-	char start = 'a'
-	char stop = 'z'
+	char start = 'a';
+	char stop = 'z';
 
-while (start < stop)
-	_putchar(start);
-	start++;
+	while (start <= stop)
+	{
+		_putchar(start);
+		start++;
 	}
 }
 
 int main(void)
 {
 	print_alphabet();
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
