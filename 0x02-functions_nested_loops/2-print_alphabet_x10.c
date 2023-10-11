@@ -4,7 +4,7 @@
 */
 #include "main.h"
 
-void print_alphabet_10(void)
+void print_alphabet_10x(void)
 {
 	int i = 0;
 	char start = 'a';
@@ -17,7 +17,7 @@ void print_alphabet_10(void)
 			start++;
 		}
 
-		putchar('\n');
+		_putchar('\n');
 	}
 	return (0);
 }
