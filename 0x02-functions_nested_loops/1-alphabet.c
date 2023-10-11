@@ -3,7 +3,7 @@
 *Return: 0 upon success
 */
 
-#include <main.h>
+#include "main.h"
 
 void print_alphabet(void)
 {
@@ -11,7 +11,7 @@ void print_alphabet(void)
 	char stop = 'z'
 
 while (start < stop)
-	{putchar(start);
+	_putchar(start);
 	start++;
 	}
 }
