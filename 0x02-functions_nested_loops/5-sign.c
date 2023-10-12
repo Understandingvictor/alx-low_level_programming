@@ -27,7 +27,6 @@ int print_sign(int n)
 	else
 	{
 		_putchar(minusOne);
-		_putchar('1');
 			return (-1);
 	}
 }
