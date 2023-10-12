@@ -14,7 +14,6 @@ num = (num % 10);
 		{
 			num = -num;
 		}
-
-	return (num);
+	_putchar(num + '0');
 	return (num);
 }
