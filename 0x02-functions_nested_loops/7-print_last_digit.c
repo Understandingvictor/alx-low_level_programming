@@ -16,6 +16,5 @@ num = -num;
 }
 
 _putchar(num + '0');
-_putchar(num + '0');
 return (0);
 }
