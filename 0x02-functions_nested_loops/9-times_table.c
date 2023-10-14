@@ -22,7 +22,7 @@ void times_table(void)
 			}
 			else
 			{
-			 _putchar(j);
+			 _putchar('j');
 			}
 
 			if (result < 10)
