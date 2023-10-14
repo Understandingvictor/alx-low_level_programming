@@ -15,14 +15,14 @@ void times_table(void)
 		{
 			result = i * j;
 
-			if (j > 0)
+			if (j <= 0)
 			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar('0');
 			}
 			else
 			{
-			 _putchar('j');
+				_putchar(',');
+				_putchar(' ');
 			}
 
 			if (result < 10)
