@@ -4,6 +4,8 @@
 *Return: 0 upon completion
 */
 
+#include "main.h"
+
 void _puts(char *str)
 {
 	int pl = 0;
