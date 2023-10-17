@@ -5,7 +5,6 @@
 */
 
 #include "main.h"
-
 void print_rev(char *s)
 {
 	int length = 0;
@@ -20,5 +19,5 @@ void print_rev(char *s)
 		_putchar(s[length]);
 			length--;
 	}
-		_putchar('\n');
+
 }
