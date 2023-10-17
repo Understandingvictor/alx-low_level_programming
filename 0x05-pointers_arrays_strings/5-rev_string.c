@@ -3,7 +3,7 @@
 *@s: param. it takes
 *Return: 0 upon completion
 */
-
+#include "main.h"
 void rev_string(char *s)
 {
 	int l = 0;
