@@ -1,0 +1,21 @@
+/**
+*print_rev -  a tfunt dat prints a string, in reverse, followed by a new line.
+*@s: parameter function takes
+*Return: 0 upon success
+*/
+
+void print_rev(char *s)
+{
+	int length = 0;
+	
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+
+	while (length >= 0)
+	{
+		_putchar(str[length]);
+			length--;
+	}
+}
