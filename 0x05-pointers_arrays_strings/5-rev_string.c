@@ -4,15 +4,19 @@
 *Return: 0 upon completion
 */
 #include "main.h"
+
 void rev_string(char *s)
 {
-	int l = 0;
+	int l, i;
+	char ch;
 
-	while (s[l] != '\0')
-	{	l++;
-	}
-	while (l >= 0)
-	{	_putchar(s[l]);
-			l--;
+	for (l = 0; s[l] != '\0'; ++l)
+		;
+
+	for (i = 0; i < l / 2; ++i)
+	{
+		ch = s[i];
+		s[i] = s[l - 1 - i];
+		s[l - 1 - i] = ch;
 	}
 }
