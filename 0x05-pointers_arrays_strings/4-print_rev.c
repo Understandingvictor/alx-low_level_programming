@@ -4,6 +4,8 @@
 *Return: 0 upon success
 */
 
+#include "main.h"
+
 void print_rev(char *s)
 {
 	int length = 0;
