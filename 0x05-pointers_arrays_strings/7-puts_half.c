@@ -5,15 +5,21 @@
 */
 #include "main.h"
 
+#include "main.h"
+#include <stdio.h>
+
 void puts_half(char *str)
 {
 	int l;
+	int secondLength;
+	int n;
 
 	for (l = 0; str[l] != '\0'; l++)
+	{
 		;
+	}
 
-	int secondLength = l / 2;
-	int n;
+	secondLength = l / 2;
 
 	if (secondLength % 2 == 1)
 	{
@@ -25,12 +31,11 @@ void puts_half(char *str)
 	else
 	{
 		int start = secondLength;
-
 		while (str[start] != '\0')
 		{
 			_putchar(str[start]);
 			start++;
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
