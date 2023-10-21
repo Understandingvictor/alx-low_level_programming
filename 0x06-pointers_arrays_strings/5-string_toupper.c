@@ -3,6 +3,7 @@
 *@str: Parameter to be taken
 *Return: 0 upon success
 */
+#include "main.h"
 char *string_toupper(char *str)
 {
 	if (str)
