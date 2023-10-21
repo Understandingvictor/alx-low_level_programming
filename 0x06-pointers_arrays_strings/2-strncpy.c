@@ -6,6 +6,7 @@
 *Return: 0 upon success.
 */
 
+#include "main.h"
 char *_strncpy(char *dest, const char *src, int n)
 {
 	char *original_dest = dest;
