@@ -4,6 +4,7 @@
 *@s2: parameter to be taken
 *Return: 0 upon completion
 */
+#include "main"
 int _strcmp(const char *s1, const char *s2)
 {
 	while (*s1 == *s2)
