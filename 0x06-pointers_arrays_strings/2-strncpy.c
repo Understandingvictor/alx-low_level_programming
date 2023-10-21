@@ -2,7 +2,9 @@
 *_strncpy - a function that copies a string.
 *@dest: parameter. to be taken
 *@src: Parameter to bee taken
+*@n: Parameter to be taken
 *Return: 0 upon success.
+*/
 
 char *_strncpy(char *dest, const char *src, int n)
 {
@@ -23,5 +25,5 @@ char *_strncpy(char *dest, const char *src, int n)
 		n--;
 	}
 
-	return original_dest;
+	return (original_dest);
 }
