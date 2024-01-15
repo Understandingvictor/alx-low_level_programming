@@ -4,6 +4,7 @@
   *@str: string passed as parameter
   *Return: a pointer
   */
+#include <stdlib.h>
 #include "main.h"
 char *_strdup(char *str)
 {
