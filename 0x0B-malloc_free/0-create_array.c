@@ -9,7 +9,7 @@
 #include "main.h"
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	char *ptr;
 
 	if (size == 0)
@@ -21,9 +21,10 @@ char *create_array(unsigned int size, char c)
 		ptr = malloc(sizeof(char) * size);
 		if (ptr != NULL)
 		{
-			for (i = 1; i <= size; i++)
+			while (i < size)
 			{
 				ptr[i] = c;
+				i++;
 			}
 		}
 	}
