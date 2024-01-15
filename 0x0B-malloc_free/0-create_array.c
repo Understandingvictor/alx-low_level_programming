@@ -5,10 +5,11 @@
   *Return: 0 upon completion
   */
 
+#include <stdlib.h>
 #include "main.h"
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	unsigned int i;
 	char *ptr;
 
 	if (size == 0)
@@ -20,7 +21,7 @@ char *create_array(unsigned int size, char c)
 		ptr = malloc(sizeof(char) * size);
 		if (ptr != NULL)
 		{
-			for (i = 0; i < size; i++)
+			for (i = 1; i <= size; i++)
 			{
 				ptr[i] = c;
 			}
