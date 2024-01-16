@@ -8,12 +8,19 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
+	int i;
+	int j;
+	int k;
+
 	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	(void)argc;
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	j = atoi(argv[1]);
+	i = atoi(argv[2]);
+	k = i * j;
+	printf("%d\n", k);
 		return (0);
 }
