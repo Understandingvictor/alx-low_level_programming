@@ -2,6 +2,7 @@
 #define CALC_H
 #include <stdio.h>
 #include <stdlib.h>
+#include "function_pointers.h"
 /**
   *struct op - Struct op
   *@op: operator
