@@ -4,7 +4,6 @@
  *@n: number of integers passed
  *Return: 0 upon success
  */
- 
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
@@ -26,7 +25,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%d", separator, va_arg(arguments, int));
 
-		
 		if (i == n - 1)
 			break;
 	}
