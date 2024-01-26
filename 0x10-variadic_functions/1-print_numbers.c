@@ -4,17 +4,18 @@
  *@n: number of integers passed
  *Return: 0 upon success
  */
-
+ 
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list arguments;
 
 	if (separator == NULL)
-		return;
+		exit(1);
 
 	va_start(arguments, n);
 
