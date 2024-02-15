@@ -11,7 +11,7 @@ void checkfd(int fd, char *filename)
 {
 	if (fd == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s", filename);
+		dprintf(2, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
 }
@@ -26,7 +26,7 @@ void checkfd2(int fd, char *filename)
 {
 	if (fd == -1)
 	{
-		dprintf(2, "Error: Can't write to %s", filename);
+		dprintf(2, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 }
@@ -42,7 +42,7 @@ void error_close_fd(int fd)
 {
 	if (close(fd) == -1)
 	{
-		dprintf(2, "Error: can't close fd %d", fd);
+		dprintf(2, "Error: can't close fd %d\n", fd);
 		exit(100);
 	}
 }
