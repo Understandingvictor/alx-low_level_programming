@@ -55,7 +55,7 @@ void error_close_fd(int fd)
   *Return: 1 on successful creation
   */
 
-int copyfile(char *file_from, char *file_to)
+void copyfile(char *file_from, char *file_to)
 {
 	int fd_from, fd_to;
 	char buffer[BUFFER_SIZE];
@@ -78,7 +78,6 @@ int copyfile(char *file_from, char *file_to)
 		{
 			error_close_fd(fd_from);
 			error_close_fd(fd_to);
-			return (-1);
 		}
 	}
 
@@ -86,12 +85,10 @@ int copyfile(char *file_from, char *file_to)
 	{
 		error_close_fd(fd_from);
 		error_close_fd(fd_to);
-		return (-1);
 	}
 
 	error_close_fd(fd_from);
 	error_close_fd(fd_to);
-	return (1);
 }
 
 /**

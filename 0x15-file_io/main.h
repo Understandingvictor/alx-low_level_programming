@@ -9,7 +9,7 @@
 void checkfd(int fd, char *filename);
 void checkfd2(int fd, char *filename);
 void error_close_fd(int fd);
-int copyfile(char *file_from, char *file_to);
+void copyfile(char *file_from, char *file_to);
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
