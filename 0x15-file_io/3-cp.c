@@ -59,7 +59,7 @@ void copyfile(char *file_from, char *file_to)
 {
 	int fd_from, fd_to;
 	char buffer[BUFFER_SIZE];
-	ssize_t bytes_read, bytes_written;
+	ssize_t bytes_read;
 
 	fd_from = open(file_from, O_RDONLY);
 	checkfd(fd_from, file_from);
@@ -72,19 +72,8 @@ void copyfile(char *file_from, char *file_to)
 
 	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
-		bytes_written = write(fd_to, buffer, bytes_read);
+		write(fd_to, buffer, bytes_read);
 
-		if (bytes_written != bytes_read)
-		{
-			error_close_fd(fd_from);
-			error_close_fd(fd_to);
-		}
-	}
-
-	if (bytes_read == -1)
-	{
-		error_close_fd(fd_from);
-		error_close_fd(fd_to);
 	}
 
 	error_close_fd(fd_from);
